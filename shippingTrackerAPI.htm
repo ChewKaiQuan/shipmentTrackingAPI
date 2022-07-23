@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-MY style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&lt;div
+style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://cdn.shopify.com/s/files/1/0274/8012/9647/files/icon-track_160x160.png?v=1589018496&quot;
+width=&quot;160x160&quot; height=&quot;160x160&quot; style=&quot;float:
+none;&quot; /&gt; &lt;br /&gt;&lt;span&gt;Enter your tracking number here to
+see your order status.&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;<br>
+&lt;div style=&quot;text-align:
+center;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br>
+&lt;div style=&quot;text-align:
+center;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br>
+&lt;div style=&quot;text-align:
+center;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br>
+&lt;div style=&quot;text-align: center;&quot;&gt;&lt;input
+type=&quot;text&quot; id=&quot;YQNum&quot; maxlength=&quot;50&quot; /&gt;
+&lt;!--The button is used to call script method.--&gt; &lt;input
+type=&quot;button&quot; background-color=&quot;rgb(56,183,255)&quot;
+value=&quot;TRACK&quot; onclick=&quot;doTrack()&quot; /&gt;&lt;/div&gt;<br>
+&lt;p style=&quot;text-align: center;&quot;&gt;Please note that it might take
+24-48 hours for tracking updates to appear.&lt;/p&gt;<br>
+&lt;div style=&quot;text-align: center;&quot;&gt;<br>
+&lt;div&gt;We are currently experiencing shipping delays and low-inventory due
+to the global emergency caused by the COVID-19. Our fulfillment team are trying
+our best in shipping out all the orders as soon as possible. Thank you for your
+understanding.&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;div id=&quot;YQContainer&quot;&gt;&lt;/div&gt;<br>
+&lt;!--Script code can be put in the bottom of the page, wait until the page is
+loaded then execute.--&gt;<br>
+&lt;script type=&quot;text/javascript&quot;
+src=&quot;//www.17track.net/externalcall.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script type=&quot;text/javascript&quot;&gt;// &lt;![CDATA[<br>
+function doTrack() {<br>
+var num = document.getElementById(&quot;YQNum&quot;).value;<br>
+if(num===&quot;&quot;){<br>
+alert(&quot;Enter your number.&quot;); <br>
+return;<br>
+}<br>
+YQV5.trackSingle({<br>
+//Required, Specify the container ID of the carrier content.<br>
+YQ_ContainerId:&quot;YQContainer&quot;,<br>
+//Optional, specify tracking result height, max height 800px, default is 560px.<br>
+YQ_Height:560,<br>
+//Optional, select carrier, default to auto identify.<br>
+YQ_Fc:&quot;0&quot;,<br>
+//Optional, specify UI language, default language is automatically detected
+based on the browser settings.<br>
+YQ_Lang:&quot;en&quot;,<br>
+//Required, specify the number needed to be tracked.<br>
+YQ_Num:num<br>
+});<br>
+}<br>
+// ]]&gt;&lt;/script&gt;</span></span></p>
+
+</div>
+
+</body>
+
+</html>
